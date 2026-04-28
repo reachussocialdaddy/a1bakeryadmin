@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Bakery - Admin Login</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #1a1c2e 0%, #0f111a 100%);
+        }
+        .login-card {
+            width: 400px;
+            padding: 3rem;
+            text-align: center;
+        }
+        .login-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 140, 66, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card glass">
+        <div class="login-logo"><i class="fas fa-bread-slice"></i></div>
+        <h2 style="margin-bottom: 0.5rem;">Admin Login</h2>
+        <p style="color: var(--text-dim); margin-bottom: 2rem;">Please sign in to continue to the panel.</p>
+        
+        <form id="loginForm">
+            <div class="form-group" style="text-align: left;">
+                <label>Email Address</label>
+                <input type="email" class="form-input" placeholder="admin@a1bakery.com" required>
+            </div>
+            <div class="form-group" style="text-align: left;">
+                <label>Password</label>
+                <input type="password" class="form-input" placeholder="••••••••" required>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; font-size: 0.85rem;">
+                <label style="display: flex; align-items: center; gap: 8px; color: var(--text-dim); cursor: pointer;">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" style="color: var(--primary); text-decoration: none;">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">Sign In</button>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

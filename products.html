@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Bakery Admin - Products</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/auth-guard.js"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar (Duplicated for consistency as requested) -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-icon"><i class="fas fa-bread-slice" style="color: white;"></i></div>
+                <span class="logo-text">A1 Bakery</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="products.html" class="nav-item active">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </a>
+                <a href="categories.html" class="nav-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Categories</span>
+                </a>
+                <a href="orders.html" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Orders</span>
+                </a>
+                <a href="customers.html" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </a>
+                <a href="analytics.html" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="gallery.html" class="nav-item">
+                    <i class="fas fa-images"></i>
+                    <span>Gallery</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Products</h1>
+                    <p>Manage your bakery items and inventory.</p>
+                </div>
+                <div class="header-right">
+                    <a href="add-product.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add New Product
+                    </a>
+                </div>
+            </header>
+
+            <!-- Filters & Search -->
+            <div class="glass" style="padding: 1.5rem; margin-bottom: 2rem; display: flex; gap: 1rem; align-items: center;">
+                <div class="search-bar" style="width: 400px; margin-bottom: 0;">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="productSearch" placeholder="Search products by name or SKU...">
+                </div>
+                <select class="form-select" style="width: 200px;">
+                    <option value="">All Categories</option>
+                    <option value="cakes">Cakes</option>
+                    <option value="bread">Bread</option>
+                    <option value="pastries">Pastries</option>
+                </select>
+                <select class="form-select" style="width: 150px;">
+                    <option value="">Status</option>
+                    <option value="active">Active</option>
+                    <option value="out">Out of Stock</option>
+                </select>
+            </div>
+
+            <!-- Products Table -->
+            <div class="data-table-container glass">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsBody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/products.js"></script>
+</body>
+</html>
