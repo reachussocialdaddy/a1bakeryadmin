@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary: #FF8C42; /* Warm Bakery Orange */
-    --primary-dark: #E67E30;
+    --primary: #C4956A; /* Brand Tan */
+    --primary-dark: #A67B5B;
+    --primary-light: #E8D5C4;
     --bg-dark: #0F111A;
     --card-bg: rgba(255, 255, 255, 0.05);
     --sidebar-bg: rgba(255, 255, 255, 0.03);
@@ -12,6 +13,7 @@
     --glass-blur: blur(12px);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --font-serif: 'Playfair Display', serif;
 }
 
 * {
@@ -29,8 +31,9 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 /* Glassmorphism Utilities */

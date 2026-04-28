@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const email = loginForm.querySelector('input[type="text"]').value;
         const password = loginForm.querySelector('input[type="password"]').value;
+        const rememberMe = loginForm.querySelector('input[type="checkbox"]').checked;
 
         if (email === 'admin' && password === 'Socialdaddy') {
             // Add a small loading effect
@@ -15,7 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.opacity = '0.7';
             btn.disabled = true;
 
-            localStorage.setItem('adminLoggedIn', 'true');
+            // Set session
+            if (rememberMe) {
+                localStorage.setItem('adminLoggedIn', 'true');
+            } else {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+            }
 
             setTimeout(() => {
                 window.location.href = 'index.html';
