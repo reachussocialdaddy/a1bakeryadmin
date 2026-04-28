@@ -3,7 +3,7 @@
     const isLoggedIn = localStorage.getItem('adminLoggedIn');
     const currentPage = window.location.pathname.split('/').pop();
 
-    if (!isLoggedIn && currentPage !== 'login.html' && currentPage !== '') {
+    if (!isLoggedIn && currentPage !== 'login.html') {
         window.location.href = 'login.html';
     }
 
