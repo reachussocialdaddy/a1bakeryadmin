@@ -7,7 +7,7 @@ const notifications = [
     { type: 'order', title: 'New Order Received', message: 'Order #ORD-9921 has been placed by Alice Cooper.', time: '10 mins ago', icon: 'fas fa-shopping-bag', color: '#FF8C42' },
     { type: 'stock', title: 'Low Stock Alert', message: 'Butter (Unsalted) is below reorder level (5kg remaining).', time: '1 hour ago', icon: 'fas fa-exclamation-triangle', color: '#fbbf24' },
     { type: 'system', title: 'Backup Successful', message: 'Weekly system backup completed successfully.', time: '5 hours ago', icon: 'fas fa-check-circle', color: '#4ade80' },
-    { type: 'user', title: 'New Customer Registered', message: 'David Brown joined A1 Bakery.', time: '1 day ago', icon: 'fas fa-user-plus', color: '#a78bfa' }
+    { type: 'user', title: 'New Customer Registered', message: 'David Brown joined A-ONE BAKERY.', time: '1 day ago', icon: 'fas fa-user-plus', color: '#a78bfa' }
 ];
 
 function loadNotifications() {
