@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        const email = loginForm.querySelector('input[type="email"]').value;
+        const email = loginForm.querySelector('input[type="text"]').value;
         const password = loginForm.querySelector('input[type="password"]').value;
 
         if (email === 'admin' && password === 'Socialdaddy') {
