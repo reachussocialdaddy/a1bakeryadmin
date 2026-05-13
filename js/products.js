@@ -3,13 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
 });
 
-const products = [
-    
-    
-    
-    
-    
-    {
+const products = [{
         "id": 1000,
         "name": "Bread Pakora",
         "category": "Snacks",
