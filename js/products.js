@@ -8,7 +8,11 @@ const products = [
     { id: 2, name: 'French Croissant', category: 'Pastries', price: '$3.50', stock: 45, status: 'Active', img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=100&h=100&fit=crop' },
     { id: 3, name: 'Artisan Sourdough', category: 'Bread', price: '$8.00', stock: 0, status: 'Out of Stock', img: 'https://images.unsplash.com/photo-1585478259715-876a6a81fc08?w=100&h=100&fit=crop' },
     { id: 4, name: 'Strawberry Macarons', category: 'Pastries', price: '$15.00', stock: 24, status: 'Active', img: 'https://images.unsplash.com/photo-1569864358642-9d16197022c4?w=100&h=100&fit=crop' },
-    { id: 5, name: 'Gluten-Free Cookies', category: 'Cookies', price: '$12.00', stock: 18, status: 'Active', img: 'https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=100&h=100&fit=crop' }
+    { id: 5, name: 'Gluten-Free Cookies', category: 'Cookies', price: '$12.00', stock: 18, status: 'Active', img: 'https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=100&h=100&fit=crop' },
+    { id: 101, name: 'Bread Pakora', category: 'Snacks', price: '$0.00', stock: 50, status: 'Active', img: 'https://drive.google.com/uc?id=16yPatZpmVqi6At2b6_aEloU6_pKSiGKG' },
+    { id: 105, name: 'Samosa', category: 'Snacks', price: '$0.00', stock: 100, status: 'Active', img: 'https://drive.google.com/uc?id=13bI2QBquW9O7gOZAnL6OA-RI4a4OrrCd' },
+    { id: 201, name: 'Round Biscuits', category: 'Biscuits', price: '$0.00', stock: 30, status: 'Active', img: 'https://drive.google.com/uc?id=1rKUQjZoI1qzfgmKLdoZdlypFC1fKhSkD' },
+    { id: 303, name: '2 Tier Wedding Cake', category: 'Cakes', price: '$0.00', stock: 5, status: 'Active', img: 'https://drive.google.com/uc?id=18tnlpmeGsY3GRAu5W95uSZnEfYVIBEsn' }
 ];
 
 function loadProducts() {
