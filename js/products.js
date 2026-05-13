@@ -4,51 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const products = [
-    {
-        "id": 1,
-        "name": "Premium Chocolate Cake",
-        "category": "Cakes",
-        "price": "$45.00",
-        "stock": 12,
-        "status": "Active",
-        "img": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&h=100&fit=crop"
-    },
-    {
-        "id": 2,
-        "name": "French Croissant",
-        "category": "Pastries",
-        "price": "$3.50",
-        "stock": 45,
-        "status": "Active",
-        "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=100&h=100&fit=crop"
-    },
-    {
-        "id": 3,
-        "name": "Artisan Sourdough",
-        "category": "Bread",
-        "price": "$8.00",
-        "stock": 0,
-        "status": "Out of Stock",
-        "img": "https://images.unsplash.com/photo-1585478259715-876a6a81fc08?w=100&h=100&fit=crop"
-    },
-    {
-        "id": 4,
-        "name": "Strawberry Macarons",
-        "category": "Pastries",
-        "price": "$15.00",
-        "stock": 24,
-        "status": "Active",
-        "img": "https://images.unsplash.com/photo-1569864358642-9d16197022c4?w=100&h=100&fit=crop"
-    },
-    {
-        "id": 5,
-        "name": "Gluten-Free Cookies",
-        "category": "Cookies",
-        "price": "$12.00",
-        "stock": 18,
-        "status": "Active",
-        "img": "https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=100&h=100&fit=crop"
-    },
+    
+    
+    
+    
+    
     {
         "id": 1000,
         "name": "Bread Pakora",
